@@ -8,26 +8,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<nav role="navigation">
-  <div id="menuToggle">
-    <input type="checkbox"/>
-    <span></span>
-    <span></span>
-    <span></span>
-    <ul id="menu">
-      <a href="index.html"><li>Home</li></a>
-      <a href="#about-me"><li>About</li></a>
-      <a href="#my-portfolio"><li>Info</li></a>
-      <a href="#contact-info"><li>Contact</li></a>
-    </ul>
-  </div>
-</nav>
+<header class="header">
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#my-portfolio">Portfolio</a></li>
+    <li><a href="#contact-info">Contact</a></li>
+  </ul>
+</header>
     <div class="about">
-        <div>
-            <h1><a id="about-me" name="about-me">Hi! I'm Melissa Orgill. I'm a Front End engineer that enjoys building beatuiful responsive web applications and sites.</a></h1>
+            <h3><a id="about-me" name="about-me">Hi! I'm Melissa Orgill. I'm a Front End engineer that enjoys building beautiful responsive web applications and sites.</a></h3>
+    <div class="location">
             <p>Located in San Francisco</p>
-        </div>
-        <div><img src="img/image1.JPG"></div>
+    </div>
+        <div><img src="img/image1.JPG" class="profile-photo"alt="Women with SF view"></div>
     </div>
     <div class="Portfolio"></div>
     <h2><a id="my-portfolio" name="my-portfolio">My Work</a></h2>
@@ -49,11 +45,15 @@
         <p>Mobile responsive website built for a personal stylist's portfolio</p>
         <p>Tech stack: Jquery,CSS,HTML</p>
     </div>
-    <div class="Contact"></div>
-    <h2><a id="contact-info" name="contact-info">Contact</a></h2>
-    <p>Orgillmelissa33@gmail.com</p>
-    <img src="img/Github.png">
-    <img src="img/Linkedin.png">
-    <footer class="Footer"><p>&copy 2017 Melissa Orgill</p></footer>
+    <div class="Contact">
+        <h2><a id="contact-info" name="contact-info">Contact</a></h2>
+        <p>Orgillmelissa33@gmail.com</p>
+        <img class="social" src="img/Github.png">
+        <img class="social" src="img/Linkedin.png">
+    </div>
+    <footer class="Footer">
+
+        <p>&copy 2017 Melissa Orgill</p>
+    </footer>
 </body>
 </html>
