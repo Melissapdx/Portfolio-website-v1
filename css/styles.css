@@ -10,6 +10,9 @@ li{
     color:#545454;
     padding-bottom:50px; 
 }
+a:hover{
+    color:#2193b0;
+}
 h2, h3{
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -24,7 +27,7 @@ h4{
 }
 p{
     text-align:center;
-    font-family: 'Alice', serif;
+    font-family: 'Libre Baskerville', serif;
     color:#545454;
     font-weight:normal;
 }
@@ -43,70 +46,88 @@ p{
 .social{
     display:inline;
     height:40px;
+    transition: all 0.5s ease;
 }
+
 .projects{
     padding:35px;
+}
+.odd{
+    color:#FFF;
 }
 .project-links{
     border: solid 2px #FFF;
     display: block;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     padding:10px;
     color:#FFF;
     width:50%;
+    transition: all 0.5s ease;
+}
+.project-links:hover{
+    color:#2193b0;
+    background-color: #fff;
+    border: solid 2px #2193b0;
+    
+}
+.middle{
+   border:solid 2px #2193b0;
+   color:#2193b0;
+}
+.middle:hover{
+    color:#FFF;
+    background-color:#2193b0;
+    border: solid 2px #2193b0;
 }
 .project-info{
     color:#fff;
 }
 .website-3{
-  color:#FFF;
- background: #2193b0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  position: relative;
+    color:#FFF;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
 }
 .website-3:before,.website-3:after{
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 60px;
-background: #2193b0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  z-index:-1;
-  -webkit-transform: skewY(3.5deg);
-  -moz-transform: skewY(3.5deg);
-  -ms-transform: skewY(3.5deg);
-  -o-transform: skewY(3.5deg);
-  transform: skewY(3.5deg);
-  -webkit-backface-visibility: hidden;
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index:-1;
+    -webkit-transform: skewY(3.5deg);
+    -moz-transform: skewY(3.5deg);
+    -ms-transform: skewY(3.5deg);
+    -o-transform: skewY(3.5deg);
+    transform: skewY(3.5deg);
+    -webkit-backface-visibility: hidden;
 }
 
 .website-1{
     background: #2193b0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: relative;
 }
 .website-1:before,.website-1:after{
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  z-index:-1;
- background: #2193b0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  -ms-transform: skewY(-3deg);
-  -o-transform: skewY(-3deg);
-  transform: skewY(-3deg);
-  -webkit-backface-visibility: hidden;
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index:-1;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -ms-transform: skewY(-3deg);
+    -o-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    -webkit-backface-visibility: hidden;
 }
 .website-1:before,.website-3:before{
     top: -36px;
@@ -122,8 +143,8 @@ img{
 }
 .about{
     background-image:linear-gradient(
-      rgba(75, 135, 159, 0.45), 
-      rgba(75, 135, 159, 0.45)
+      rgba(33, 147, 176, 0.45), 
+      rgba(33, 147, 176, 0.45)
     ),url("image1.JPG");
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,7 +165,7 @@ img{
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fbfdfd;
+  background-color: #fff;
 }
 
 .header li a {
@@ -244,6 +265,9 @@ img{
 /* media queries */
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
+h4{
+    font-size:1.5em;
+}
  .intro{
     font-size:3em;
  }
@@ -261,5 +285,66 @@ img{
   .header .menu-icon {
     display: none;
   }
+  .header li a{
+    padding: 20px 40px;
+  }
+  .website-1{
+    background:#fff;
+    
+  }
+  .website-1:after, .website-3:after,.website-1:before, .website-3:before{
+    background:#fff;
+  }
+  .project-info, .odd{
+    color:#545454;
+  }
+  .projects{
+    color:#2193b0;
+    font-size: 1.8em;
+  }
+  .project-links{
+    border: solid 2px #2193b0;
+    color: #2193b0;
+    transition: all 0.5s ease;
+  }
+.project-links:hover{
+    border: solid 2px #2193b0;
+    background: #2193b0;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+  img{
+    max-width:50%;
+  }
+  .last{
+    color:#fff;
+  }
+  .link-last{
+    color:#2193b0;
+    background-color:#fff;
+  }
+  footer, .Contact,.website-3{
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    margin:0;
+    padding:15px;
+    position: relative;
+  }
+  .website-3:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index:-1;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    -webkit-backface-visibility: hidden;
 
+  }
 }

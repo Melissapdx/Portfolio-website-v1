@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Alice|Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Playfair+Display:400,700" rel="stylesheet">
 </head>
 <body>
 <header class="header">
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#my-portfolio">Portfolio</a></li>
     <li><a href="#contact-info">Contact</a></li>
+    <li><a href="#my-portfolio">Portfolio</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="index.html">Home</a></li>
   </ul>
 </header>
     </div>
@@ -25,10 +26,14 @@
     <div class="location">
             <h3>Located in San Francisco</h3>
     </div>
+    <div class-"skills">
+        <a id="skills" name="skills" class="skills"></a>
+        <h2>Skills</h2>
+    </div>
     <div class="Portfolio">
         <h2><a id="my-portfolio" name="my-portfolio" class="my-portfolio">My Work</a></h2>
         <div class="website-1">
-        <h3 class="projects">Photography Website</h3><img src="img/kason.jpg"> 
+        <h3 class="projects odd">Photography Website</h3><img src="img/kason.jpg"> 
         <p class="project-info">Mobile responsive photography website utlizing Masonry.js</p>
         <p class="project-info">Tech Stack: Javascript,CSS,HTML</p>
         <a href="http://kasonculbertsonphotography.com/" class="project-links">View here</a>
@@ -40,24 +45,26 @@
         <p>Backend: Python, Flask, PostgreSQL, SQLAlchemy</p>
         <p>Frontend: Javascript, jQuery, AJAX, HTML, CSS, Bootstrap</p>
         <p>APIs: Stripe</p>
-        <a href="https://github.com/Melissapdx/Milkmaids" class="project-links">Github</a>
+        <a href="https://github.com/Melissapdx/Milkmaids" class="project-links middle">Github</a>
     </div>
     <div class="website-3">
-        <h3 class="projects">Personal Stylist Website</h3><img src="img/tanya.jpg"> 
-        <p class="project-info">Mobile responsive website built for a personal stylist's portfolio</p>
-        <p class="project-info">Tech stack: Jquery,CSS,HTML</p>
-        <a href="http://tanyademidenko.com/" class="project-links">View here</a>
+        <h3 class="projects odd last">Personal Stylist Website</h3><img src="img/tanya.jpg"> 
+        <p class="project-info last">Mobile responsive website built for a personal stylist's portfolio</p>
+        <p class="project-info last">Tech stack: Jquery,CSS,HTML</p>
+        <a href="http://tanyademidenko.com/" class="project-links link-last">View here</a>
     </div>
-    <div class="Contact">
-        <h2><a id="contact-info" name="contact-info">Contact</a></h2>
-        <p>Orgillmelissa33@gmail.com</p>
-        <img class="social" src="img/Github.png">
-        <img class="social" src="img/Linkedin.png">
+    <div class="Contact last">
+        <a id="contact-info" name="contact-info"></a>
+        <h2 class="last">Contact</h2>
+        <p class="last">Orgillmelissa33@gmail.com</p>
+        <a href="https://github.com/Melissapdx" class="social">
+        <img class="social" src="img/Github.png"></a>
+        <a href="https://www.linkedin.com/in/melissa-orgill/" class="social">
+        <img class="social" src="img/Linkedin.png"></a>
     </div>
     </div>
     <footer class="Footer">
-
-        <p>&copy 2017 Melissa Orgill</p>
+        <p class="last">&copy 2017 Melissa Orgill</p>
     </footer>
 </body>
 </html>
