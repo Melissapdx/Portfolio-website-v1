@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Alice|Playfair+Display:400,700" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -13,43 +14,46 @@
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
     <li><a href="index.html">Home</a></li>
-    <li><a href="#about">About</a></li>
     <li><a href="#my-portfolio">Portfolio</a></li>
     <li><a href="#contact-info">Contact</a></li>
   </ul>
 </header>
+    </div>
     <div class="about">
-            <h3><a id="about-me" name="about-me">Hi! I'm Melissa Orgill. I'm a Front End engineer that enjoys building beautiful responsive web applications and sites.</a></h3>
+            <h3 class="intro">Hi! I'm Melissa Orgill.<h4> I'm a Front End engineer that enjoys building beautiful responsive web applications and sites.</h4>
+    </div>
     <div class="location">
-            <p>Located in San Francisco</p>
+            <h3>Located in San Francisco</h3>
     </div>
-        <div><img src="img/image1.JPG" class="profile-photo"alt="Women with SF view"></div>
+    <div class="Portfolio">
+        <h2><a id="my-portfolio" name="my-portfolio" class="my-portfolio">My Work</a></h2>
+        <div class="website-1">
+        <h3 class="projects">Photography Website</h3><img src="img/kason.jpg"> 
+        <p class="project-info">Mobile responsive photography website utlizing Masonry.js</p>
+        <p class="project-info">Tech Stack: Javascript,CSS,HTML</p>
+        <a href="http://kasonculbertsonphotography.com/" class="project-links">View here</a>
     </div>
-    <div class="Portfolio"></div>
-    <h2><a id="my-portfolio" name="my-portfolio">My Work</a></h2>
-    <div class="milkmaids">
-        <h3>Milkmaids</h3><img src="img/milkmaids-mobile.jpg">
-        <p>Milkmaids is a responsive breast milk delivery web app built in Python with Javascript, Flask & SQLAlchemy. Front end design built with a mobile first design with basic Bootstrap and custom CSS styles. For parents who do not have the option of breastfeeding, they can purchase milk from donors and have it delivered to their door</p>
+    <div class="website-2">
+        <h3 class="projects">Milkmaids</h3><img src="img/milkmaids-mobile.jpg">
+        <p>Milkmaids is a responsive breast milk e-commerce web app built in Python with Javascript, Flask & SQLAlchemy. Front end design built with a mobile first design with basic Bootstrap and custom CSS styles. For parents who do not have the option of breastfeeding, they can purchase milk from donors and have it delivered to their door</p>
         <p>Tech Stack</p>
         <p>Backend: Python, Flask, PostgreSQL, SQLAlchemy</p>
         <p>Frontend: Javascript, jQuery, AJAX, HTML, CSS, Bootstrap</p>
-        <p>APIs: Stripe</p><a href="https://github.com/Melissapdx/Milkmaids">Github</a>
+        <p>APIs: Stripe</p>
+        <a href="https://github.com/Melissapdx/Milkmaids" class="project-links">Github</a>
     </div>
-    <div>
-        <h3>Photography Website</h3><img src="img/kason.jpg"> <a href="http://kasonculbertsonphotography.com/">View here</a>
-        <p>Mobile responsive photography website utlizing Masonry.js</p>
-        <p>Tech Stack: Javascript,CSS,HTML</p>
-    </div>
-    <div>
-        <h3>Personal Stylist Website</h3><img src="img/tanya.jpg"> <a href="http://tanyademidenko.com/">View here</a>
-        <p>Mobile responsive website built for a personal stylist's portfolio</p>
-        <p>Tech stack: Jquery,CSS,HTML</p>
+    <div class="website-3">
+        <h3 class="projects">Personal Stylist Website</h3><img src="img/tanya.jpg"> 
+        <p class="project-info">Mobile responsive website built for a personal stylist's portfolio</p>
+        <p class="project-info">Tech stack: Jquery,CSS,HTML</p>
+        <a href="http://tanyademidenko.com/" class="project-links">View here</a>
     </div>
     <div class="Contact">
         <h2><a id="contact-info" name="contact-info">Contact</a></h2>
         <p>Orgillmelissa33@gmail.com</p>
         <img class="social" src="img/Github.png">
         <img class="social" src="img/Linkedin.png">
+    </div>
     </div>
     <footer class="Footer">
 
