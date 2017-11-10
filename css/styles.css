@@ -13,42 +13,64 @@ li{
 a:hover{
     color:#2193b0;
 }
-h2, h3{
+h2{
     text-align: center;
     font-family: 'Playfair Display', serif;
     color:#545454;
     font-weight:lighter;
+    font-size: 1.7em;
 }
 h4{
     text-align: center;
     font-family: 'Playfair Display', serif;
     color:#fff;
     font-weight:lighter;
+    margin: 0 auto;
+    width:400px;
+    padding-top: 20px;
 }
 p{
     text-align:center;
     font-family: 'Libre Baskerville', serif;
     color:#545454;
     font-weight:normal;
+    padding: 0px 20px;
 }
+
 .intro{
     color:#fff;
     font-size:2em;
     padding-top:40px;
     margin:0;
 }
-.Contact{
-    text-align:center;
+.circles{
+    color:#2193b0;
+    border-radius:50%;
+    border:2px solid #2193b0;
+    height:100px;
+    width:100px;
+    display:inline-block;
+    transition: all 0.5s ease;
 }
+.skills{
+    margin:0 auto;
+    padding:15px 15px;
+}
+.circle-skills{
+    text-align:center;
+    color:#2193b0;
+    padding: 25px 6px;
+    transition: all 0.5s ease;
+    
+}
+.circle-skills:hover{
+    color:#545454;
+}
+
+/* Portfolio section*/
 .my-portfolio{
     padding-bottom:20px; 
 }
-.social{
-    display:inline;
-    height:40px;
-    transition: all 0.5s ease;
-}
-
 .projects{
     padding:35px;
 }
@@ -82,6 +104,10 @@ p{
 }
 .project-info{
     color:#fff;
+}
+
+.website-1,.website-2,.website-3{
+    padding-bottom: 15px;
 }
 .website-3{
     color:#FFF;
@@ -136,11 +162,6 @@ p{
     bottom: -20px;
 }
 /*image styles*/
-img{
-    max-width:75%;
-    display: block;
-    margin:0 auto;
-}
 .about{
     background-image:linear-gradient(
       rgba(33, 147, 176, 0.45), 
@@ -150,6 +171,15 @@ img{
     background-size: cover;
     background-position: center center;
     min-height:100vh;
+}
+img{
+    max-width:75%;
+    display: block;
+    margin:0 auto;
+}
+
+.project-image{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 /*navigation*/
 
@@ -261,12 +291,23 @@ img{
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
+/*footer*/
+.Contact{
+    text-align:center;
+}
+
+.social{
+    display:inline;
+    height:40px;
+    transition: all 0.5s ease;
+}
 
 /* media queries */
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
 h4{
     font-size:1.5em;
+    width:600px;
 }
  .intro{
     font-size:3em;
@@ -287,6 +328,9 @@ h4{
   }
   .header li a{
     padding: 20px 40px;
+  }
+  .skills{
+    width:600px;
   }
   .website-1{
     background:#fff;
