@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Playfair+Display:400,700" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -19,11 +19,10 @@
     <li><a href="index.html">Home</a></li>
   </ul>
 </header>
-    </div>
     <div class="about">
             <h2 class="intro">Hi! I'm Melissa Orgill.</h2><h4> I'm a Front End engineer from San Francisco that enjoys building beautiful responsive web applications and sites.</h4>
     </div>
-        <a id="skills" name="skills" class="skills"></a>
+        <a id="skills" class="skills"></a>
         <h2>Skills</h2>
     <div class="skills">
         <div class="circles"><p class="circle-skills">Javascript</p></div>
@@ -38,16 +37,16 @@
     </div>
     <div class="Portfolio">
         <h2>My Work</h2>
-        <a id="my-portfolio" name="my-portfolio" class="my-portfolio"></a>
+        <a id="my-portfolio" class="my-portfolio"></a>
         <div class="website-1">
-        <h2 class="projects odd">Photography Website</h2><img src="img/kason.jpg" class="project-image" alt=" photographer website"> 
+        <h2 class="projects odd">Photography Website</h2><a href="http://kasonculbertsonphotography.com/" ><img src="img/kason.jpg" class="project-image" alt="photographer website"></a> 
         <p class="project-info">Mobile responsive photography website utlizing Masonry.js</p>
         <p class="project-info">Tech Stack: Javascript,CSS,HTML</p>
         <a href="http://kasonculbertsonphotography.com/" class="project-links">View here</a>
     </div>
     <div class="website-2">
-        <h2 class="projects">Milkmaids</h2><img src="img/milkmaids-mobile.jpg" class="project-image" alt="milkmaids website">
-        <p>Milkmaids is a responsive breast milk e-commerce web app built in Python with Javascript, Flask & SQLAlchemy. Front end design built with a mobile first design with basic Bootstrap and custom CSS styles. For parents who do not have the option of breastfeeding, they can purchase milk from donors.</p>
+        <h2 class="projects">Milkmaids</h2><a href="https://github.com/Melissapdx/Milkmaids"><img src="img/milkmaids-mobile.jpg" class="project-image" alt="milkmaids website"></a>
+        <p class="project-descr">Milkmaids is a responsive breast milk e-commerce web app built in Python with Javascript, Flask & SQLAlchemy. Front end design built with a mobile first design with basic Bootstrap and custom CSS styles. For parents who do not have the option of breastfeeding, they can purchase milk from donors.</p>
         <p>Tech Stack</p>
         <p>Backend: Python, Flask, PostgreSQL, SQLAlchemy</p>
         <p>Frontend: Javascript, jQuery, AJAX, HTML, CSS, Bootstrap</p>
@@ -55,23 +54,35 @@
         <a href="https://github.com/Melissapdx/Milkmaids" class="project-links middle">View on Github</a>
     </div>
     <div class="website-3">
-        <h2 class="projects odd last">Personal Stylist Website</h2><img src="img/tanya.jpg" class="project-image" alt="stylist website"> 
+        <h2 class="projects odd last">Personal Stylist Website</h2><a href="http://tanyademidenko.com/"><img src="img/tanya.jpg" class="project-image" alt="stylist website"> </a>
         <p class="project-info last">Mobile responsive website built for a personal stylist's portfolio</p>
         <p class="project-info last">Tech stack: Jquery,CSS,HTML</p>
         <a href="http://tanyademidenko.com/" class="project-links link-last">View here</a>
     </div>
     <div class="Contact last">
-        <a id="contact-info" name="contact-info"></a>
+        <a id="contact-info"></a>
         <h2 class="last">Contact</h2>
         <p class="last">Orgillmelissa33@gmail.com</p>
         <a href="https://github.com/Melissapdx" class="social">
-        <img class="social" src="img/Github.png"></a>
+        <img class="social" src="img/Github.png" alt="github link"></a>
         <a href="https://www.linkedin.com/in/melissa-orgill/" class="social">
-        <img class="social" src="img/Linkedin.png"></a>
+        <img class="social" src="img/Linkedin.png" alt="linkedin link"></a>
     </div>
     </div>
     <footer class="Footer">
-        <p class="last">&copy 2017 Melissa Orgill</p>
+        <p class="last">&copy; 2017 Melissa Orgill</p>
     </footer>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+        $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+    </script>
 </body>
 </html>
