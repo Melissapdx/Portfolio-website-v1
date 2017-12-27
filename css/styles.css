@@ -18,7 +18,8 @@ h2{
     font-family: 'Playfair Display', serif;
     color:#545454;
     font-weight:lighter;
-    font-size: 1.7em;
+    font-size: 1.8em;
+    margin-top:0;
 }
 h4{
     text-align: center;
@@ -92,7 +93,7 @@ p{
     margin-top:20px;
     padding:10px;
     color:#FFF;
-    max-width:50%;
+    max-width:30%;
     transition: all 0.5s ease;
 }
 .project-links:hover{
@@ -101,7 +102,9 @@ p{
     border: solid 2px #2193b0;
     
 }
-
+.top{
+  margin-bottom: 0;
+}
 .middle{
    border:solid 2px #2193b0;
    color:#2193b0;
@@ -363,6 +366,7 @@ h4{
     border: solid 2px #2193b0;
     color: #2193b0;
     transition: all 0.5s ease;
+    max-width:25%;
   }
 .project-links:hover{
     border: solid 2px #2193b0;
